@@ -21,6 +21,7 @@ class BudgetList:
 
     def __len__(self):
         #return self.sum_expenses.len() + self.sum_overages.len()
+        pass
 
     def __iter__ (self):
         self.iter_e = iter(self.expenses)
