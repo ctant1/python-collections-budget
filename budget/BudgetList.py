@@ -1,6 +1,5 @@
 from . import Expense
 import matplotlib.pyplot as plt
-from pprint import pprint as pp
 
 class BudgetList:
     
@@ -20,8 +19,7 @@ class BudgetList:
             self.sum_overages += item
 
     def __len__(self):
-        #return self.sum_expenses.len() + self.sum_overages.len()
-        pass
+        return self.sum_expenses.len() + self.sum_overages.len()
 
     def __iter__ (self):
         self.iter_e = iter(self.expenses)
